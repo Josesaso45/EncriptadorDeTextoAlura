@@ -57,11 +57,19 @@ main{
 
 .alerta{
     position: absolute;
-    top: 750px;
-    left: 370px;
+    width:  340px;
+    height: 30px;
+    top: 700px;
+    left: 220px;
+    gap: 50px;
+    color: #000000b4;
     display: flex;
-    color: #F3F5FC;
 }
+/*.instruccion{
+    width: 100%;
+    top: 50%;
+}*/
+
 
 .contenedorBotones{
     position: absolute;
@@ -72,21 +80,23 @@ main{
 }
 
 .btn-encriptador{
-    display: inline-block;
-    transition: all 0.3s ease-in;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    color: #090909;
-    padding: 0.7em 1.7em;
-    font-size: 18px;
-    border-radius: 0.5em;
-    background: #e8e8e8;
-    border: 1px solid #3f3232;
-    box-shadow: 6px 6px 12px #1238e0,
-             -6px -6px 12px #1238e0;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background-color:  #d6dde4;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 20px;
 }
-.btn-encriptador:active{
+/*.btn-encriptador:active{
     color: #666;
     box-shadow: inset 4px 4px 12px #1238e0,
                inset -4px -4px 12px #1238e0;
@@ -105,39 +115,9 @@ main{
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
-  }
+  }*/
   
-  .btn-encriptador:after {
-    content: "";
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.45);
-    top: 180%;
-    width: 160%;
-    height: 190%;
-    background-color: #009087;
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-  }
-  
-  .btn-encriptador:hover {
-    color: #ffffff;
-    border: 1px solid #009087;
-  }
-  
-  .btn-encriptador:hover:before {
-    top: -35%;
-    background-color: #009087;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
-  
-  .btn-encriptador:hover:after {
-    top: -45%;
-    background-color: #1ed8cc;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
+ 
 .btn-desencriptador{
     /*display: flex;*/
     width: 328px;
@@ -155,4 +135,30 @@ main{
     font-size: 16px;
     font-weight: 400;
     margin-right: 20px;
+}
+
+.seccionN2{
+    background-color: white;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+
+}
+
+.contenedorMunieco{
+    width: 216px;
+    height: 304px;
+    top: 283px;
+    left: 1032px;
+    
+}
+
+.contenedorDeParrafo{
+    width: 336px;
+    height:  142px;
+    top: 409px;
+    left: 1032px;
+    gap: 16px;
 }
