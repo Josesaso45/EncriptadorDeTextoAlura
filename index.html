@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2? family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--La fuente sacada de GOOGLE API FONTS-->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    -->
 </head>
 <body>
-    <script src="script.js"></script>
+    <header>
+        <img class="Logo" src="imagenes/Logo.png" alt="">        
+    </header>
+
+    <main> 
+        <section class="seccionN1">
+            <div class="contenedorDeTexto">
+                <textarea class="cajaTexto" placeholder="Ingrese el texto que deseas encriptar porfavor"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="imagenes/Alerta.png" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedorBotones">
+                <input type="button" class="btn-encriptador" value="Encriptar">
+                <input type="button" class="btn-desencriptador" value="Desencriptar">
+            </div>
+        </section>
+        <section class="seccionN2">
+            <div class="contenedorMunieco">
+                <img src="imagenes/Muñeco.png" alt="munieco">
+            </div>
+            <div class="contenedorDeParrafo">
+                <h3>Ningún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar,</p>
+            </div>
+            <div class="contenedorDeResultado">
+                <p class="TextoResultado">
+                    holis
+                </p>
+            </div>
+        </section>
+        <section class="seccionN3">
+
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
 </html>
