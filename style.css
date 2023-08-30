@@ -14,11 +14,11 @@ header{
 }
 
 .logo{
-    width: 120px;
-    height: 48px;
-    flex-shrink: 0;
+    width: 100px;
+    height: 50px;
     /*padding-left: 50% ;*/
-    padding-top: 50px ;
+    padding-top: 20px ;
+    padding-left: 40px;
 }
 
 main{
@@ -35,20 +35,20 @@ main{
     left: 200px;
     top: 100px;
     padding-left: 100px;
-    width: 1080px;
-    height: 600px;
+    width: 577px;
 }
 
 .cajaTexto{
-    width: 577px;
+    width: 80%;
+    height: 100%;
+    border: none;
     color:  #0A3871;
     font-family: Inter,sans-serif;
     font-weight: 400;
     line-height: 150%;
     font-size: 32px;
-    border: #0A3871;
     cursor: pointer;
-    
+    background-color: #f4f4fc
 }
 
 .cajaTexto::placeholder{
@@ -58,10 +58,8 @@ main{
 .alerta{
     position: absolute;
     width:  340px;
-    height: 30px;
-    top: 700px;
-    left: 220px;
-    gap: 50px;
+    top: 770px;
+    left: 250px;
     color: #000000b4;
     display: flex;
 }
@@ -73,7 +71,7 @@ main{
 
 .contenedorBotones{
     position: absolute;
-    top: 750px;
+    top: 800px;
     height: 80px;
     padding-left: 15%;
     padding-top: 15px ;
@@ -84,11 +82,11 @@ main{
     height: 67px;
     padding: 24px;
     align-items: flex-start;
-    gap: 8px;
-    flex-shrink: 0;
+    /*gap: 8px;*/
+    /*flex-shrink: 0;*/
     border-radius: 24px;
-    background-color:  #d6dde4;
-    color: #0A3871;
+    background-color:  #0A3871;
+    color: #d6dde4;
     border: 1px solid #0A3871;
     cursor: pointer;
     font-family: Inter,sans-serif;
@@ -138,15 +136,16 @@ main{
 }
 
 .seccionN2{
-    background-color: white;
+    display: block;
+    position: relative;
     width: 400px;
-    height: 944px;
-    top: 40px;
-    left: 1000px;
+    height: 840px;
+    right: 200px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
     border-radius: 32px;
-    flex-shrink: 0;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
 }
 
 .contenedorMunieco{
@@ -154,7 +153,7 @@ main{
     height: 304px;
     top: 4550px;
     left: 1032px;
-    
+
 }
 
 .contenedorDeParrafo{
@@ -164,7 +163,7 @@ main{
     left: 1032px;
     gap: 16px;
 }
-.resultado{
+.contenedorDeParrafo h3{
     align-self: stretch;
     color: var(--gray-gray-500, #343A40);
     text-align: center;
@@ -172,10 +171,11 @@ main{
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 28.8px */
+    line-height: 120%; 
+    padding-top: 50px;
 }
 
-.parrafito{
+.contenedorDeParrafo p{
     align-self: stretch;
     color: var(--gray-gray-400, #495057);
     text-align: center;
@@ -183,23 +183,36 @@ main{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%; 
+    padding-top: 30px;
+}
+
+.contenedorCopiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    background-color: aqua;
+    padding-left: 40px;
 }
 
 .btn-copiar{
+    position: relative;
     width: 328px;
     height: 67px;
     padding: 24px;
-    align-items: flex-start;
-    gap: 8px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    background-color:  #d6dde4;
+    border-radius: 24px;
+    background-color:  #ffffff;
     color: #0A3871;
     border: 1px solid #0A3871;
     cursor: pointer;
     font-family: Inter,sans-serif;
     font-size: 16px;
     font-weight: 400;
-    margin-right: 20px;
+    top: -50px;
+}
+
+.contenedorResultado p{
+    font-size: 25px;
+    color: #495057;
 }
