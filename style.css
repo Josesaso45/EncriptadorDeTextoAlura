@@ -33,9 +33,13 @@ main{
 .contenedorDeTexto{
     position: absolute;
     left: 200px;
-    top: 100px;
+    top: 90px;
     padding-left: 100px;
-    width: 577px;
+    width: 900px;
+    height: 350px;  
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
 }
 
 .cajaTexto{
@@ -49,6 +53,7 @@ main{
     font-size: 32px;
     cursor: pointer;
     background-color: #f4f4fc
+    
 }
 
 .cajaTexto::placeholder{
@@ -57,11 +62,10 @@ main{
 
 .alerta{
     position: absolute;
-    width:  340px;
-    top: 770px;
-    left: 250px;
-    color: #000000b4;
+    top: 720px;
+    left: 300px;
     display: flex;
+    color: #495057;
 }
 /*.instruccion{
     width: 100%;
@@ -71,7 +75,7 @@ main{
 
 .contenedorBotones{
     position: absolute;
-    top: 800px;
+    top: 740px;
     height: 80px;
     padding-left: 15%;
     padding-top: 15px ;
@@ -80,18 +84,13 @@ main{
 .btn-encriptador{
     width: 328px;
     height: 67px;
-    padding: 24px;
-    align-items: flex-start;
-    /*gap: 8px;*/
-    /*flex-shrink: 0;*/
     border-radius: 24px;
-    background-color:  #0A3871;
-    color: #d6dde4;
-    border: 1px solid #0A3871;
-    cursor: pointer;
-    font-family: Inter,sans-serif;
+    background-color: #0A3871;
+    color: white;
     font-size: 16px;
     font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: none;
     margin-right: 20px;
 }
 /*.btn-encriptador:active{
@@ -117,22 +116,16 @@ main{
   
  
 .btn-desencriptador{
-    /*display: flex;*/
     width: 328px;
     height: 67px;
-    padding: 24px;
-    align-items: flex-start;
-    gap: 8px;
-    flex-shrink: 0;
     border-radius: 24px;
-    background-color:  #d6dde4;
+    background-color: #D8DFE8;
     color: #0A3871;
-    border: 1px solid #0A3871;
-    cursor: pointer;
-    font-family: Inter,sans-serif;
     font-size: 16px;
     font-weight: 400;
-    margin-right: 20px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
 }
 
 .seccionN2{
@@ -148,43 +141,49 @@ main{
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
 }
 
-.contenedorMunieco{
-    width: 336px;
-    height: 304px;
-    top: 4550px;
-    left: 1032px;
+.contenedorMuneco{
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    box-sizing: border-box;
+    padding-top: 50px;
 
 }
 
 .contenedorDeParrafo{
-    width: 350px;
-    height:  142px;
-    top: 409px;
-    left: 1032px;
-    gap: 16px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 525px;
+    left: 76px;
 }
 .contenedorDeParrafo h3{
-    align-self: stretch;
-    color: var(--gray-gray-500, #343A40);
-    text-align: center;
-    font-family: Inter,sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 120%; 
-    padding-top: 50px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
 }
 
 .contenedorDeParrafo p{
-    align-self: stretch;
-    color: var(--gray-gray-400, #495057);
-    text-align: center;
-    font-family: Inter,sans-serif;
-    font-size: 16px;
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
-    line-height: 150%; 
-    padding-top: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+.contenedorResultado{
+    position: absolute;
+    bottom: 330px;
+    width: 320px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+.contenedorResultado p{
+    font-size: 25px;
+    color: #495057;
 }
 
 .contenedorCopiar{
@@ -197,22 +196,21 @@ main{
 }
 
 .btn-copiar{
-    position: relative;
     width: 328px;
     height: 67px;
-    padding: 24px;
     border-radius: 24px;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     color: #0A3871;
-    border: 1px solid #0A3871;
-    cursor: pointer;
-    font-family: Inter,sans-serif;
     font-size: 16px;
     font-weight: 400;
-    top: -50px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    right: 4px;
 }
 
-.contenedorResultado p{
-    font-size: 25px;
-    color: #495057;
+.ocultar{
+    display: none;
 }
