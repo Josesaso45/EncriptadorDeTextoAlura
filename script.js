@@ -1,6 +1,6 @@
 var botonEncriptar = document.querySelector(".btn-encriptador");
 var botonDesencriptar = document.querySelector(".btn-desencriptador");
-var muneco = document.querySelector("contenedorMuneco");
+var muneco = document.querySelector(".contenedorMuneco");
 var contenedor = document.querySelector(".contenedorDeParrafo");
 var resultado = document.querySelector(".contenedorResultado");
 
@@ -35,19 +35,19 @@ function encriptarTexto(mensaje){
     var textoFinal = "";
 
     for(var i = 0;i < texto.length; i++){
-        if(texto= [i] == "a"){
+        if(texto [i] == "a"){
             textoFinal = textoFinal + "ai"
         }
-        else if(texto= [i] == "e"){
+        else if(texto [i] == "e"){
             textoFinal = textoFinal + "enter"
         }
-        else if(texto= [i] == "i"){
+        else if(texto [i] == "i"){
             textoFinal = textoFinal + "imes"
         }
-        else if(texto= [i] == "o"){
+        else if(texto [i] == "o"){
             textoFinal = textoFinal + "ober"
         }
-        else if(texto= [i] == "u"){
+        else if(texto [i] == "u"){
             textoFinal = textoFinal + "ufat"
         }
         else{
@@ -59,7 +59,7 @@ function encriptarTexto(mensaje){
 
 const btnCopiar = document.querySelector(".btn-copiar");
     btnCopiar.addEventListener("click", copiar = () =>{
-    var contenido = document.querySelector(".contenedorResultado").textContent;
+    var contenido = document.querySelector(".textoResultado").textContent;
     navigator.clipboard.writeText(contenido);
     console.log("hola");
 })
